@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Conversion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="row g-2">
+        <div class="col-md-6">
+            <img src="image/pexels-ena-marinkovic-1814213-3640930.jpg" alt="" width="100%" height= "750px" >
+        </div>
+
+        <div class="col-md-6">
+            <div class="container calculator-section">
+                <h1>Simple Conversion Calculator</h1>
+
+                <div class="row g-2">
+                    <form class="col-md-12">
+                        <label class="m-2" for="label">Select Measurement</label> <br>
+                        <select name="label" id="" class="form-control mb-3" onchange="window.location.href=this.value">
+                            <option>Select a Conversion</option>
+                            <option value="index.html">Currency Conversion</option>
+                            <option value="index2.html">Time Conversion</option>
+                        </select>
+                    </form>
+        
+                    <form class="col-md-5">
+                        <label for="value">Type Desire Value:</label>
+                        <input type="number" id="value" name="value" placeholder="Seconds" class="form-control">
+                    </form>
+        
+                    <div class="col-md-2">
+                        <span><i class="fa-solid fa-equals"></i></span>
+                    </div>
+        
+                    <form class="col-md-5">
+                        <label for="converted">The Converted Value Is:</label>
+                        <input type="number" id="converted" name="converted" class="form-control">
+                    </form>
+        
+                    <div class="col-md-4">
+                        <button class="btn btn-dark" onclick="minutes();">Convert to Minutes</button>
+                    </div>
+        
+                    <div class="col-md-4">
+                        <button class="btn btn-dark" onclick="hours();">Convert to Hours</button>
+                    </div>
+        
+                    <div class="col-md-4">
+                        <button class="btn btn-dark" onclick="days();">Convert to Days</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+  
+
+    
+</body>
+<script src="main.js"></script>
+</html>
